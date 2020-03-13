@@ -1,2 +1,2 @@
-export const ADD_EVENT="ADD_EVENT";
+export const EVENT_ADDED="EVENT_ADDED";
 export const DELETE_EVENT="DELETE_EVENT";

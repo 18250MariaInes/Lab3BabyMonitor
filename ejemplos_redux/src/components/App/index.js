@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 
 import { configureStore } from '../../store';
 import ExampleForm from '../ExampleForm';
+import EventsForm from '../EventsForm';
 
 
 
@@ -10,8 +11,8 @@ const store = configureStore();
 
 const App = () => (
   <Provider store={store}>
-    
-    <ExampleForm onSubmit={() => alert('Adios!')} />
+    <EventsForm />
+    <ExampleForm/>
   </Provider>
 );
 

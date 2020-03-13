@@ -1,7 +1,7 @@
 import * as types from '../types/event';
 
 export const addEvent=(id,type,dateTime,notes)=>({
-type:types.ADD_EVENT,
+type:types.EVENT_ADDED,
 payload:{id,type,dateTime, notes}
 });
 
