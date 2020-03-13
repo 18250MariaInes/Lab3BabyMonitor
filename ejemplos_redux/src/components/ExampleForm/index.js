@@ -2,10 +2,10 @@ import { v4 as uuidv4 } from 'uuid';
 import React, { useState, Fragment } from 'react';
 import { connect } from 'react-redux';
 
-import './styles.css';
+import './style.css';
 import * as selectors from '../../reducers';
-import * as actions from '../../actions/baby';
-import { getBabies } from '../../reducers/baby';
+import * as actions from '../../actions/babies';
+import { getBabies } from '../../reducers/babies';
 
 const ExampleForm = ({ onSubmit }) => {
   const [value1, changeValue1] = useState('');

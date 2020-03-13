@@ -9,7 +9,8 @@ export const assignEventToBaby = (agent, event) => ({
   }
 }) ;
 
-export const unassignEventFromBaby = agent => ({
+export const unassignEventFromBaby = (agent, event) => ({
   type: types.EVENT_BABY_UNASSIGNED,
-  payload: { baby: agent }
+  payload: { baby: agent ,
+  event,}
 });

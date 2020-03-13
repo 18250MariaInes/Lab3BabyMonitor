@@ -5,7 +5,7 @@ const byBabyID = (state = {}, action) => {
     case types.EVENT_BABY_ASSIGNED: {
       return {
         ...state,
-        [action.payload.baby]: [...state.payload.baby, action.payload.event],
+        [action.payload.baby]: [...action.payload.event],
       };
     }
     case types.EVENT_BABY_UNASSIGNED: {
