@@ -1,0 +1,17 @@
+
+.baby-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 120px;
+    transition: 0.25s;
+}
+
+.baby {
+    background:papayawhip;
+    float: left;
+    padding: 10px;
+}
+
+.baby--selected {
+    transform: scale(0.9);
+}

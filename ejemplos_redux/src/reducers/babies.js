@@ -35,7 +35,12 @@ const order = (state = [], action) => {
   export default babies;
 
   
-export const getBaby = (state, id) => state.byId[id];
+/*export const getBaby = (state, id) => state.byId[id];
 export const getBabies = state => state.order.map(
   id => getBaby(state, id),
-).filter(baby => baby != null);
+).filter(baby => baby != null);*/
+
+export const getBaby = (state,id) => state.byId[id]
+export const getBabies = (state) => state.order.reverse().map(
+    id=>getBaby(state,id)
+    ).filter(baby=>baby!=null)

@@ -4,6 +4,8 @@ import { Provider } from 'react-redux';
 import { configureStore } from '../../store';
 import ExampleForm from '../ExampleForm';
 import EventsForm from '../EventsForm';
+import Babies from '../babies';
+//import babies from '../../reducers/babies';
 
 
 
@@ -13,6 +15,7 @@ const App = () => (
   <Provider store={store}>
     <EventsForm />
     <ExampleForm/>
+    <Babies/>
   </Provider>
 );
 
