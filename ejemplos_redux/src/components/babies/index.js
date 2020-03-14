@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import './styles.css';
 import * as selectors from '../../reducers';
 import * as actions from '../../actions/babies';
-import baby from '../baby';
+import Baby from '../baby';
 
 
 const Babies = ({ number }) => (
@@ -16,9 +16,9 @@ const Babies = ({ number }) => (
           {'No hay bebes :('}
         </h1>
       ) : (
-        range(number).map(
+        (number).map(
           index => (
-            <baby
+            <Baby
               key={index}
               index={index}
             />

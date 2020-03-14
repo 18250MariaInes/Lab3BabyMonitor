@@ -6,7 +6,7 @@ import * as selectors from '../../reducers';
 import * as actions from '../../actions/babies';
 import * as selectedActions from '../../actions/selectedBaby';
 
-const baby = ({
+const Baby = ({
     baby,
     isSelected = false,
     onClick,
@@ -23,7 +23,7 @@ const baby = ({
       <div className="baby">
         {
           <h1>
-              hola a todos
+              "SOY UN BB"
           </h1>
         }
       </div>
@@ -40,4 +40,4 @@ const baby = ({
         dispatch(selectedActions.selectedBaby(index));
       },
     }),
-  )(baby);
+  )(Baby);
