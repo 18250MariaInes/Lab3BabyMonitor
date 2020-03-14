@@ -17,8 +17,7 @@ const order = (state = [], action) => {
     switch (action.type) {
       case types.BABY_ADDED: {
         return {
-          ...state,
-          [action.payload.id]: action.payload,
+          ...state,[action.payload.id]:action.payload
         };
       }
       default: {
@@ -35,12 +34,9 @@ const order = (state = [], action) => {
   export default babies;
 
   
-/*export const getBaby = (state, id) => state.byId[id];
-export const getBabies = state => state.order.map(
-  id => getBaby(state, id),
-).filter(baby => baby != null);*/
+
 
 export const getBaby = (state,id) => state.byId[id]
-export const getBabies = (state) => state.order.reverse().map(
+export const getBabies = (state) => state.order.map(
     id=>getBaby(state,id)
     ).filter(baby=>baby!=null)

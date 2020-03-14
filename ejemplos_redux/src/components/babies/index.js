@@ -31,6 +31,9 @@ const Babies = ({ number }) => (
 
 
 export default connect(
+     /*(state)=>{
+            console.log(selectors.getBabies(state))
+        }*/
   state => ({
     number: selectors.getBabies(state),
   }),
