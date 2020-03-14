@@ -12,6 +12,9 @@ const ExampleForm = ({ onSubmit }) => {
   const [value2, changeValue2] = useState('');
   return (
     <div className= "baby-form-wrapper">
+      <h1>
+          {'AGREGAR BEBÉ'}
+        </h1>
       <div className="FormBaby">
         <div className = "FormField">
           <label className="FormField_Label" htmlFor="name">NOMBRE</label>

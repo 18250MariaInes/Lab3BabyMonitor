@@ -48,7 +48,14 @@ color: #445366;
 .event-form-wrapper{
 background-color: #FBCAF7  ;
 width: 30%;
-height: 100;
+height: 100%;
 margin-left: 300;
-
+position: fixed;
+right: 1050px;
+display: flex;
+flex-direction: column;
+align-self: center;
+text-align: center;
+align-items: center;
+justify-content: center;
 }

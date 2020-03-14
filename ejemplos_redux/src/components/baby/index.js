@@ -12,6 +12,8 @@
       baby,
       isSelected = false,
       onClick,
+      name, 
+      lastName
     }) => (
       <div
         className={
@@ -23,28 +25,32 @@
         onClick={onClick}
       >
         <div className="baby">
-          {
-            <h1>
-                "SOY UN BB"
-            </h1>
-          }
+            <div className="baby_name">
+                {(Object.entries(Object.entries(baby)[1])[1]).slice(1)}
+                
+            </div>
+             <div className="baby_last_name">
+             {(Object.entries(Object.entries(baby)[2])[1]).slice(1)}
+            </div>
         </div>
       </div>
     );
   
     export default connect(
-        (state, index)=>{
-            console.log(index)
-        }
-      /*(state, { index, id }) => ({
-        baby: id,
+        /*(state, index)=>{
+            console.log(Object.entries(Object.entries(index)[0][1])[1][1]);
+        }*/
+      (state, { index }) => ({
+        baby: index,
         isSelected: selectors.getSelectedBaby(state) === index,
-        
+        id: Object.entries(Object.entries(index)[0][1])[0][1],
+        name: Object.entries(Object.entries(index)[0][1]),
+        lastName: Object.entries(Object.entries(index)[0][1])[2][1],
       }),
       (dispatch, { index }) => ({
         onClick() {
           dispatch(selectedActions.selectedBaby(index));
         },
-      }),*/
+      }),
     )(Baby);
   

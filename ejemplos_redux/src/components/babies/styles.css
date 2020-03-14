@@ -3,4 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     background-color: rebeccapurple;
+    position: fixed;
+    width: 550px;
+    right: 500px;
 }
