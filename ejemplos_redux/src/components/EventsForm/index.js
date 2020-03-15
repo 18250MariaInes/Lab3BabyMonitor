@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import './styles.css';
 import * as selectors from '../../reducers';
 import * as actions from '../../actions/event';
+import * as actionsToBaby from '../../actions/babyToEvent'
 
 const EventsForm = ({ onSubmit }) => {
   const [value1, changeValue1] = useState('');
@@ -37,8 +38,11 @@ export default connect(
   undefined,
   dispatch => ({
     onSubmit(value1, value2) {
-      dispatch(
-        actions.addEvent(uuidv4(), value1, new Date(), value2),
+      let idEvent=uuidv4();
+     dispatch(
+         
+        actions.addEvent(idEvent, value1, new Date(), value2),
+        //actionsToBaby.assignEventToBaby()
         console.log('Evento agregado')
         );
     },

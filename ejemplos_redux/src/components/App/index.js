@@ -5,6 +5,7 @@ import { configureStore } from '../../store';
 import ExampleForm from '../ExampleForm';
 import EventsForm from '../EventsForm';
 import Babies from '../babies';
+import Events from '../Events'
 //import babies from '../../reducers/babies';
 
 
@@ -16,6 +17,7 @@ const App = () => (
     <EventsForm />
     <ExampleForm/>
     <Babies/>
+    <Events/>
   </Provider>
 );
 
