@@ -50,6 +50,7 @@
       (dispatch, { index }) => ({
         onClick() {
           dispatch(selectedActions.selectedBaby(index));
+          console.log(selectedActions.selectedBaby(index));
         },
       }),
     )(Baby);

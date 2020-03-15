@@ -35,9 +35,10 @@ export const getAssignedEvent = (
 
 export const getAssignedEvents = state => eventToBabiesSelectors.getAssignedEvent(state.babyToEvent);
 
-export const getSelectedBaby = (
+/*export const getSelectedBaby = (
   state =>
     selectedBabySelectors.getSelectedBaby(
       state.selectedBaby,
     )
-);
+);*/
+export const getSelectedBaby = (state) => selectedBabySelectors.getSelectedBaby(state.selectedBaby)

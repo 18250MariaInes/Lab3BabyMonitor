@@ -6,6 +6,7 @@ import './styles.css';
 import * as selectors from '../../reducers';
 import * as actions from '../../actions/event';
 import * as actionsToBaby from '../../actions/babyToEvent'
+import * as selectedActions from '../../actions/selectedBaby';
 
 const EventsForm = ({ onSubmit }) => {
   const [value1, changeValue1] = useState('');
@@ -35,14 +36,18 @@ const EventsForm = ({ onSubmit }) => {
 
 
 export default connect(
-  undefined,
-  dispatch => ({
+  (state, index)=>{
+    console.log(selectors.getSelectedBaby(state));
+        },
+  (dispatch, {state}) => ({
     onSubmit(value1, value2) {
       let idEvent=uuidv4();
      dispatch(
          
         actions.addEvent(idEvent, value1, new Date(), value2),
-        //actionsToBaby.assignEventToBaby()
+        //actionsToBaby.assignEventToBaby(selectors.getSelectedBaby(state)),
+        //console.log(selectors.getSelectedBaby(state)),
+        //console.log(state),
         console.log('Evento agregado')
         );
     },
