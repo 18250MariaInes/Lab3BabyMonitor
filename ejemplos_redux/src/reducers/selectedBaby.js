@@ -2,7 +2,7 @@
 import * as types from '../types/selectedBaby';
 
 
-const selectedBaby = (state = null, action) => {
+const selectedBaby = (state = [0,1,3], action) => {
   switch (action.type) {
     case types.BABY_SELECTED: {
       return action.payload; 

@@ -10,7 +10,8 @@
   
   const Event = ({
       event,
-      //onClick,
+      onClick,
+      //onSubmit
     }) => (
       <div
         className="event-wrapper"
@@ -23,6 +24,14 @@
              <div className="event_note">
              {(Object.entries(Object.entries(event)[3])[1]).slice(1)}
             </div>
+            <div className="event_note">
+             {(Object.entries(Object.entries(event)[5])[1]).slice(1)}
+            </div>
+            <button className="SubmitButton" type="submit" onClick={
+              () => onClick()
+            }>
+              {'x'}
+            </button>
         </div>
       </div>
     );
@@ -34,10 +43,11 @@
       (state, { index }) => ({
         event: index,
       }),
-      /*(dispatch, { index }) => ({
+      (dispatch, { index }) => ({
         onClick() {
-          dispatch(selectedActions.selectedBaby(index));
+          dispatch(actions.deleteEvent(Object.entries(index)[0][1]))
+          //console.log(Object.entries(index)[0][1]);
         },
-      })*/undefined,
+      }),
     )(Event);
   

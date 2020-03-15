@@ -9,7 +9,7 @@ const order = (state = [], action) => {
       case types.EVENT_ADDED: {
         return [...state, action.payload.id];
       }
-      case types.EVENT_DELETED: {
+      case types.DELETE_EVENT: {
         const newState = [...state].filter(b => b !== action.payload.id);
         return newState;
       }
@@ -27,7 +27,7 @@ const order = (state = [], action) => {
           [action.payload.id]: action.payload,
         };
       }
-      case types.EVENT_DELETED: {
+      case types.DELETE_EVENT: {
         return omit(state, action.payload.id);
       }
       default: {
@@ -45,6 +45,6 @@ const order = (state = [], action) => {
   export default events;
   
   export const getEvent = (state, id) => state.byId[id];
-  export const getEvents = state => state.order.map(
+  export const getEvents = state => state.order.reverse().map(
     id => getEvent(state, id),
   ).filter(event => event != null);
