@@ -1,9 +1,10 @@
 
 .baby-wrapper {
     display: flex;
-    flex-direction: column;
-    max-width: 120px;
+    flex-direction: row;
+    max-height: 120px;
     transition: 0.25s;
+    
 }
 
 .baby {
@@ -12,6 +13,12 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
+    height: 67px;
+    width: 159px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    font-style: normal;
 }
 
 .baby--selected {
@@ -25,4 +32,10 @@
 .h3{
     display: flex;
     flex-direction: column;
+}
+.baby_name{
+    font-size: 1.5rem;
+}
+.baby_last_name{
+    font-size: 1rem;
 }

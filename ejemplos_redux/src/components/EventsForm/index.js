@@ -18,6 +18,9 @@ const EventsForm = ({ onSubmit, babyID, babyName }) => {
   const [value2, changeValue2] = useState('');
   return (
     <div className= "event-form-wrapper">
+       <h1>
+            {'AGREGAR EVENTO'}
+          </h1>
       <div className="FormBaby">
         <div className = "FormField">
           <label className="FormField_Label" htmlFor="name">TIPO</label>
@@ -43,7 +46,6 @@ const EventsForm = ({ onSubmit, babyID, babyName }) => {
 export default connect(
   /*(state, index)=>{
     if (selectors.getSelectedBaby(state)!=null){
-
       babyID= Object.entries(selectors.getSelectedBaby(state))[0][1];
       babyName= Object.entries(selectors.getSelectedBaby(state))[1][1];
       return(babyID, babyName);

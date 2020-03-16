@@ -9,23 +9,26 @@ import Baby from '../baby';
 
 
 const Babies = ({ number }) => (
-  <div className="babies">
-    {
-      number.length === 0 ? (
-        <h1>
-          {'No hay bebes :('}
-        </h1>
-      ) : (
-        (number).map(
-          index => (
-            <Baby
-              key={index}
-              index={index}
-            />
-          ),
+  <div className="info-wrapper">
+    <div className="babies">
+    
+      {
+        number.length === 0 ? (
+          <h1>
+            {'No hay bebes :('}
+          </h1>
+        ) : (
+          (number).map(
+            index => (
+              <Baby
+                key={index}
+                index={index}
+              />
+            ),
+          )
         )
-      )
-    }
+      }
+    </div>
   </div>
 );
 

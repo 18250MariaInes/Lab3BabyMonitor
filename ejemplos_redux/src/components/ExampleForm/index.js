@@ -11,28 +11,28 @@ const ExampleForm = ({ onSubmit }) => {
   const [value1, changeValue1] = useState('');
   const [value2, changeValue2] = useState('');
   return (
-    <div className= "baby-form-wrapper">
-      <h1>
-          {'AGREGAR BEBÉ'}
-        </h1>
-      <div className="FormBaby">
-        <div className = "FormField">
-          <label className="FormField_Label" htmlFor="name">NOMBRE</label>
-          <input type="text" className="FormField_Input" placeholder="Ingresa el nombre" value={value1} onChange={e => changeValue1(e.target.value)}/>
-        </div>
+      <div className= "baby-form-wrapper">
+        <h1>
+            {'AGREGAR BEBÉ'}
+          </h1>
+        <div className="FormBaby">
+          <div className = "FormField">
+            <label className="FormField_Label" htmlFor="name">NOMBRE</label>
+            <input type="text" className="FormField_Input" placeholder="Ingresa el nombre" value={value1} onChange={e => changeValue1(e.target.value)}/>
+          </div>
 
-        <div className = "FormField"> 
-          <label className="FormField_Label" htmlFor="name">APELLIDO</label>
-          <input type="text" className="FormField_Input" placeholder="Apellido" value={value2} onChange={e => changeValue2(e.target.value)}/>
+          <div className = "FormField"> 
+            <label className="FormField_Label" htmlFor="name">APELLIDO</label>
+            <input type="text" className="FormField_Input" placeholder="Apellido" value={value2} onChange={e => changeValue2(e.target.value)}/>
+          </div>
+        
+          <button className="SubmitButton" type="submit" onClick={
+            () => onSubmit(value1, value2)
+          }>
+            {'Enviar'}
+          </button>
         </div>
-      
-        <button className="SubmitButton" type="submit" onClick={
-          () => onSubmit(value1, value2)
-        }>
-          {'Enviar'}
-        </button>
       </div>
-    </div>
   );
 } 
 

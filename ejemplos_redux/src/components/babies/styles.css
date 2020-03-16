@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: rebeccapurple;
-    position: fixed;
+    background-color: #CAFBE7;
+    position: absolute;
     width: 550px;
     right: 500px;
 }
+
