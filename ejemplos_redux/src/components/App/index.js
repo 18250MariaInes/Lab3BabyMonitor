@@ -6,6 +6,8 @@ import ExampleForm from '../ExampleForm';
 import EventsForm from '../EventsForm';
 import Babies from '../babies';
 import Events from '../Events'
+//import {Link} from 'react-router-dom';
+
 //import babies from '../../reducers/babies';
 
 
@@ -18,8 +20,11 @@ const App = () => (
     <ExampleForm/>
     <Babies/>
     <Events/>
+    
   </Provider>
 );
 
 
 export default App;
+
+//<Events/>

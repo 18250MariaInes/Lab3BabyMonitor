@@ -4,13 +4,22 @@
     flex-direction: row;
     flex-wrap: wrap;
     background-color: royalblue;
-    position: fixed;
+    position: absolute;
     width: 550px;
     right: 500px;
-    bottom: 300px;
+    top: 410px;
     align-self: center;
     text-align: center;
     align-items: center;
     justify-content: center;
+    overflow: scroll;
+    max-height: 400px;
+
+}
+
+.thingy-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 

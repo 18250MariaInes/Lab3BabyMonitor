@@ -9,6 +9,7 @@ import Event from '../Event';
 
 
 const Events = ({ number }) => (
+  <div className="thingy-wrapper">
   <div className="events">
     {
       number.length === 0 ? (
@@ -26,6 +27,7 @@ const Events = ({ number }) => (
         )
       )
     }
+  </div>
   </div>
 );
 

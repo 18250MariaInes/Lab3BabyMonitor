@@ -1,7 +1,7 @@
 
 .event-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 200px;
     transition: 0.25s;
 }
@@ -12,8 +12,8 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    height: 67px;
-    width: 159px;
+    height: 100px;
+    width: 200px;
     border-width: 2px;
     border-color: black;
     border-style: solid;
@@ -22,7 +22,9 @@
 
 }
 
-
+.deleteEvent{
+    background-color: brown;
+}
 
 
 .h3{

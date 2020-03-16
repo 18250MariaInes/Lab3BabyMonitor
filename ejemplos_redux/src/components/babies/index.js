@@ -9,7 +9,7 @@ import Baby from '../baby';
 
 
 const Babies = ({ number }) => (
-  <div className="info-wrapper">
+  <div className="thingy-wrapper">
     <div className="babies">
     
       {

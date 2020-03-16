@@ -26,11 +26,11 @@
       >
         <div className="baby">
             <div className="baby_name">
-                {(Object.entries(Object.entries(baby)[1])[1]).slice(1)}
+                Nombre: {(Object.entries(Object.entries(baby)[1])[1]).slice(1)}
                 
             </div>
              <div className="baby_last_name">
-             {(Object.entries(Object.entries(baby)[2])[1]).slice(1)}
+             Apellido: {(Object.entries(Object.entries(baby)[2])[1]).slice(1)}
             </div>
         </div>
       </div>

@@ -17,15 +17,16 @@
         className="event-wrapper"
       >
         <div className="event" >
+       
             <div className="event_type">
-                {(Object.entries(Object.entries(event)[1])[1]).slice(1)}
+                Tipo: {(Object.entries(Object.entries(event)[1])[1]).slice(1)}
                 
             </div>
              <div className="event_note">
-             {(Object.entries(Object.entries(event)[3])[1]).slice(1)}
+             Nota: {(Object.entries(Object.entries(event)[3])[1]).slice(1)}
             </div>
             <div className="event_note">
-             {(Object.entries(Object.entries(event)[5])[1]).slice(1)}
+             Realizado por: {(Object.entries(Object.entries(event)[5])[1]).slice(1)}
             </div>
             <button className="SubmitButton" type="submit" onClick={
               () => onClick()
