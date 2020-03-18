@@ -29,7 +29,7 @@
              Realizado por: {(Object.entries(Object.entries(event)[5])[1]).slice(1)}
             </div>
             <div className="event_note">
-             Realizado en la fecha: {(Object.entries(Object.entries(event)[2])[1].toString()).slice(1)}
+             Realizado en la fecha: {(Object.entries(Object.entries(event)[2])[1].toString().slice(1,23).replace(/-/g,"")).slice(1)}
             </div>
             <button className="deleteEvent" type="submit" onClick={
               () => onClick()
