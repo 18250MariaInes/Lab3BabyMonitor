@@ -28,10 +28,10 @@
             <div className="event_note">
              Realizado por: {(Object.entries(Object.entries(event)[5])[1]).slice(1)}
             </div>
-            <button className="SubmitButton" type="submit" onClick={
+            <button className="deleteEvent" type="submit" onClick={
               () => onClick()
             }>
-              {'x'}
+              {'Eliminar evento'}
             </button>
         </div>
       </div>

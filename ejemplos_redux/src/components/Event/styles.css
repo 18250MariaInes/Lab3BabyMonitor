@@ -2,7 +2,7 @@
 .event-wrapper {
     display: flex;
     flex-direction: row;
-    max-width: 200px;
+    max-width: 400px;
     transition: 0.25s;
 }
 
@@ -12,8 +12,8 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    height: 100px;
-    width: 200px;
+    height: 150px;
+    width: 500px;
     border-width: 2px;
     border-color: black;
     border-style: solid;
@@ -23,7 +23,9 @@
 }
 
 .deleteEvent{
-    background-color: brown;
+    background-color: red;
+   width: 75px;
+   align-self: center;
 }
 
 
